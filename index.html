@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="logo-container"><img src="https://www.cosasparabebes.co/wp-content/uploads/2019/11/logo_sinfondo.png"/></div>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve our service</p>
+<form id="survey-form" method="post" action ='https://register-demo.freecodecamp.org'>
+
+<fieldset>
+        <label id ="name-label" for="name">Name: <input placeholder="Enter your name" id="name" name="name" type="text" required /></label>
+        <label id ="email-label" for="email">Email: <input placeholder="Enter your email" id="email" name="email" type="email" required /></label>
+        <label id ="number-label" for="number">Baby's Age: <input placeholder="Enter the baby's age in months" id="number" type="number" name="number" min="0" max="36" /></label>
+</fieldset>
+<fieldset>
+        <label for="dropdown">Which option best describes you?
+          <select id="dropdown" name="dropdown">
+            <option value="0">(select one)</option>
+            <option value="1">Mother</option>
+            <option value="2">Father</option>
+            <option value="3">Uncle/Aunt</option>
+            <option value="4">GrandMa/Pa</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+        <label>Would you recommend cosasparabebes.co to a friend?</label>
+        <label for="Definitely"><input id="Definitely" type="radio" name="recommend" class="inline" value="1" /> Definitely</label>
+        <label for="Maybe"><input id="Maybe" type="radio" name="recommend" class="inline" value="2" /> Maybe</label>
+        <label for="not-sure"><input id="not-sure" type="radio" name="recommend" class="inline" value="3"  /> Not sure</label>
+        <label>In which type of products are you interested?</label>
+        <label for="Toys"><input id="Toys" type="checkbox"  name="Toys" class="inline" value="1" /> Toys</label>
+        <label for="Cloth"><input id="Cloth" type="checkbox"  name="Cloth" class="inline" value="2"/> Cloth</label>
+        <label for="Diappers"><input id="Diappers" type="checkbox"  name="Diappers" class="inline" value="3" /> Diappers</label>
+        <label for="Early-stimulation"><input id="Early-stimulation" type="checkbox"  name="Early-stimulation" class="inline" value="4" /> Early stimulation</label>
+        <label for="Lactation"><input id="Lactation" type="checkbox"  name="Lactation" class="inline" value="5"/> Lactation</label>
+        <label for="Promotions"><input id="Promotions" type="checkbox"  name="Promotions" class="inline" value="6"/> Promotions</label>
+</fieldset>
+<fieldset>
+        <label for="comments">Any comments or suggestions?
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+</fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
